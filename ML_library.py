@@ -1,64 +1,7 @@
-import torch               as torch
-import torch.nn.functional as F
+import torch
 
-from torch.nn           import Linear
-from torch_geometric.nn import GraphConv
-from torch_geometric.nn import global_mean_pool
-
-
-class GCNN(torch.nn.Module):
-    """Graph convolution neural network.
-    """
-    
-    def __init__(self, features_channels, pdropout=0.4):
-        super(GCNN, self).__init__()
-        
-        # Set random seed for reproducibility
-        #torch.manual_seed(12345)
-        
-        # Define graph convolution layers
-        self.conv1   = GraphConv(features_channels, 256)
-        self.conv2   = GraphConv(256, 256)
-        
-        # Define linear layers
-        self.linconv = Linear(256, 16)
-        self.lin     = Linear(16, 1)
-        
-        self.pdropout = pdropout
-
-    def forward(self, x, edge_index, batch):
-        ## CONVOLUTION
-        
-        # Apply graph convolution with ReLU activation function
-        x = self.conv1(x, edge_index)
-        x = x.relu()
-        x = self.conv2(x, edge_index)
-        x = x.relu()
-        
-        # Apply dropout regularization to prevent overfitting
-        #x = F.dropout(x, p=0.1, training=self.training)
-
-        ## POOLING
-        
-        # Apply global mean pooling to reduce dimensionality
-        x = global_mean_pool(x, batch)  # [batch_size, hidden_channels]
-
-        # Apply dropout regularization
-        
-        x = F.dropout(x, p=self.pdropout, training=self.training)
-        
-        # Apply linear convolution with ReLU activation function
-        x = self.linconv(x)
-        x = x.relu()
-        
-        # Apply dropout regularization
-        #x = F.dropout(x, p=0.2, training=self.training)
-        
-        ## REGRESSION
-        
-        # Apply final linear layer to make prediction
-        x = self.lin(x)
-        return x
+# Checking if pytorch can run in GPU, else CPU
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 
 def train(model, criterion, train_loader, optimizer):
@@ -80,7 +23,7 @@ def train(model, criterion, train_loader, optimizer):
     all_ground_truths = []
     for data in train_loader:  # Iterate in batches over the training dataset
         # Perform a single forward pass
-        out = model(data.x, data.edge_index, data.batch)
+        out = model(data.x, data.edge_index, data.edge_attr, data.batch).to(device)
         
         # Compute the loss
         loss = criterion(out, data.y)
@@ -130,7 +73,7 @@ def test(model, criterion, test_loader):
     with torch.no_grad():
         for data in test_loader:  # Iteratea in batches over the train/test dataset
             # Perform a single forward pass
-            out = model(data.x, data.edge_index, data.batch)
+            out = model(data.x, data.edge_index, data.edge_attr, data.batch).to(device)
             
             # Compute the loss
             loss = criterion(out, data.y)

@@ -2,4 +2,5 @@
 .ipynb_checkpoints
 __pycache__
 dataset.pt
-normalized_dataset.pt
+standardized_dataset.pt
+standardized_parameters.pt
