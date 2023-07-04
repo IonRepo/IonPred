@@ -8,7 +8,7 @@ Please be aware that the code is under active development, bug reports are welco
 
 As part of the European Kesterite Workshop, the next Colab has been developed as an introduction to Machine Learning in Materials Science, which can be executed online:
 
-[https://colab.research.google.com/drive/1VcL_wd2w_mpW_i7jOiFeTC7xB-4Fffgv?usp=sharing](URL "Colab Tutorial" target="_blank")
+[Colab Tutorial](https://colab.research.google.com/drive/1VcL_wd2w_mpW_i7jOiFeTC7xB-4Fffgv?usp=sharing "Title" target="_blank")
 
 ## Installation
 
