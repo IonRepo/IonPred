@@ -2,8 +2,6 @@
 
 Within this repository, a brief introduction to Machine Learning (ML) in materials science might be found. Its purpose is to present the grounds of Artificial Intelligence and its relevance in the discovery of novel crystalls, for properties ranging from photovoltaics to all-solid-state energy storage.
 
-Please be aware that the code is under active development, bug reports are welcomed in the GitHub issues!
-
 ## Colab tutorial
 
 As part of the European Kesterite Workshop, the next Colab has been developed as an introduction to ML in materials science, which can be executed online:
