@@ -12,7 +12,7 @@ As part of the European Kesterite Workshop, the next Colab has been developed as
 
 The data can be found in the following link:
 
-[Data](https://drive.google.com/file/d/1eLFCzYXnuXIAg7dSxlvB8sVU6q-AM11s/view?usp=sharing)
+[Data](https://www.dropbox.com/scl/fi/kzid1j8amj8lng16v8hso/data.zip?rlkey=fq7uapq2jzhegpfdflrs3bo1c&dl=0)
 
 ## Installation
 
