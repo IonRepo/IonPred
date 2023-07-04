@@ -4,6 +4,12 @@ Within this repository, a brief introduction to Machine Learning in Materials Sc
 
 Please be aware that the code is under active development, bug reports are welcomed in the GitHub issues!
 
+## Colab tutorial
+
+As part of the European Kesterite Workshop, the next Colab has been developed as an introduction to Machine Learning in Materials Science, which can be executed online:
+
+[Link Text](URL "https://colab.research.google.com/drive/1VcL_wd2w_mpW_i7jOiFeTC7xB-4Fffgv?usp=sharing" target="_blank")
+
 ## Installation
 
 To download the repository and install the dependencies:
