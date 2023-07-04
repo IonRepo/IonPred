@@ -16,6 +16,8 @@ The data can be found in the following link:
 
 As well, a rather quick introduction might be found in our [`introduction`](Introduction.pdf), which introduces some background theory as well as innovative implementations of new algorithms.
 
+Please be aware that the code is under active development, bug reports are welcomed in the GitHub issues!
+
 ## Installation
 
 To download the repository and install the dependencies:
