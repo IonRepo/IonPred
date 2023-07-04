@@ -14,7 +14,7 @@ The data can be found in the following link:
 
 [Data](https://www.dropbox.com/scl/fi/hz9acwsvprnpyhoxepyeb/data.zip?rlkey=oedrl0shx4gga8jvnl14t151q&dl=0)
 
-As well, a rather quick introduction might be found in , which describes the.
+As well, a rather quick introduction might be found in our [`introduction`](Introduction.pdf), which introduces some background theory as well as innovative implementations of new algorithms.
 
 ## Installation
 
