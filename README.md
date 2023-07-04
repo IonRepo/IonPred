@@ -1,12 +1,12 @@
 # IonPred
 
-Within this repository, a brief introduction to Machine Learning in Materials Science might be found. Its purpose is to present the grounds of Artificial Intelligence and its relevance in the discovery of novel crystalls, for properties ranging from photovoltaics to all-solid-state energy storage.
+Within this repository, a brief introduction to Machine Learning (ML) in materials science might be found. Its purpose is to present the grounds of Artificial Intelligence and its relevance in the discovery of novel crystalls, for properties ranging from photovoltaics to all-solid-state energy storage.
 
 Please be aware that the code is under active development, bug reports are welcomed in the GitHub issues!
 
 ## Colab tutorial
 
-As part of the European Kesterite Workshop, the next Colab has been developed as an introduction to Machine Learning in Materials Science, which can be executed online:
+As part of the European Kesterite Workshop, the next Colab has been developed as an introduction to ML in materials science, which can be executed online:
 
 [Colab Tutorial](https://colab.research.google.com/drive/1jD_4_dzPpPdeIFkBLF12RPWLePdcBTIf?usp=sharing)
 
@@ -14,9 +14,9 @@ The data can be found in the following link:
 
 [Data](https://www.dropbox.com/scl/fi/hz9acwsvprnpyhoxepyeb/data.zip?rlkey=oedrl0shx4gga8jvnl14t151q&dl=0)
 
-As well, a rather quick introduction might be found in our [`introduction`](Introduction.pdf), which introduces some background theory as well as innovative implementations of new algorithms.
+As well, a rather quick discussion might be found in our [`introduction`](Introduction.pdf) to ML in the field, which introduces some background theory as well as innovative implementations.
 
-Please be aware that the code is under active development, bug reports are welcomed in the GitHub issues!
+Please be aware that the code and text is under active development, bug reports are welcomed in the GitHub issues!
 
 ## Installation
 
